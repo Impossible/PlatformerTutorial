@@ -10,6 +10,7 @@
 #define JUMPBUFFER
 #define PARTICLES
 #define SOUND
+#define EVENTS
 
 using UnityEngine;
 using UnityEngine.Events;
@@ -213,7 +214,7 @@ public class Dude : MonoBehaviour
 #endif
                 #region VARIABLEJUMP
 #if VARIABLEJUMP
-                if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             acceleration.y = highJumpGravity;
         }
@@ -260,10 +261,12 @@ public class Dude : MonoBehaviour
 #if COLLISIONY
         if (hitBox.Cast(new Vector2(0, Mathf.Sign(velocity.y)), hitResult, Mathf.Abs(velocity.y) * Time.fixedDeltaTime) > 0)
         {
+#if EVENTS
             if (inAir)
             {
                 jumpEvent.Invoke(jumpShakeAmount, jumpShakeTime);
             }
+#endif
 
             moveTo.y = hitResult[0].point.y - (hitBox.bounds.extents.y + 0.01f) * Mathf.Sign(velocity.y) - hitBox.offset.y;
             inAir = false;
