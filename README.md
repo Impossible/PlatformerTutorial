@@ -23,3 +23,4 @@ A simple platformer made in Unity 3D for demonstrating game feel and tuning
 
 ## Articles
 * The guide to making 2D platformers - http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/
+* 2D Pixel Perfect: How to set up your Unity project for retro 8-bit games - https://blogs.unity3d.com/2019/03/13/2d-pixel-perfect-how-to-set-up-your-unity-project-for-retro-8-bits-games/
