@@ -3,6 +3,9 @@ A simple platformer made in Unity 3D for demonstrating game feel and tuning
 
 ![screenshot](https://github.com/Impossible/PlatformerTutorial/blob/master/Screenshot/screenshot.png)
 
+# Demo
+* https://impossible.itch.io/platformertutorial
+
 # Resources
 ## Code
 * Enichan pico8 platfomer tutorial - https://github.com/Enichan/Pico8Platformer
